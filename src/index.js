@@ -1,8 +1,5 @@
 import "./js/common"
 import "./css/main.css"
+import "./fonts/css/fonts.css"
 import "./scss/main.scss"
 
-import '@fortawesome/fontawesome-free/js/fontawesome'
-import '@fortawesome/fontawesome-free/js/solid'
-import '@fortawesome/fontawesome-free/js/regular'
-import '@fortawesome/fontawesome-free/js/brands'

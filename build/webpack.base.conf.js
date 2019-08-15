@@ -20,7 +20,8 @@ externals: {
     output: {
         filename: `${PATH.assets}js/[name].js`,
         path: PATH.dist,
-        publicPath: "/" 
+        //publicPath: "./"
+        publicPath: "/"
     },
     module: {
         rules: [
@@ -30,11 +31,25 @@ externals: {
                 exclude: "/node_loaders/"
             },
             {
-                test: /\.(png|jpg|gif|svg)$/,
+                test: /\.(png|jpg)$/,
                 loader: "file-loader",
                 options: {
                     name: "[name].[ext]"
                 }
+            },
+
+            {
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: `${PATH.assets}/fonts`,
+                            //publicPath: "../fonts/"
+                        }
+                    }
+                ]
             },
             {
                 test: /\.scss$/,
@@ -85,7 +100,7 @@ externals: {
         }),
         new CopyWebpackPlugin([
             {from: `${PATH.src}/img`, to: `${PATH.assets}/img`},
-            {from: `${PATH.src}/static`, to: ""}
+            {from: `${PATH.src}/static`, to: ""},
         ])
       ],
 }

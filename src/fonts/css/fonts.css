@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Maven Pro';
+    src: url('../webfonts/Mavenproregular.woff2') format('woff2'), url('../webfonts/Mavenproregular.woff') format('woff'), url('../webfonts/Mavenproregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Maven Pro';
+    src: local('Maven Pro Medium'), local('MavenProMedium'), url('../webfonts/Mavenpromedium.woff2') format('woff2'), url('../webfonts/Mavenpromedium.woff') format('woff'), url('../webfonts/Mavenpromedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Maven Pro';
+    src: local('Maven Pro Bold'), local('MavenProBold'), url('../webfonts/Mavenprobold.woff2') format('woff2'), url('../webfonts/Mavenprobold.woff') format('woff'), url('../webfonts/Mavenprobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Maven Pro';
+    src: local('Maven Pro Black'), local('MavenProBlack'), url('../webfonts/Mavenproblack.woff2') format('woff2'), url('../webfonts/Mavenproblack.woff') format('woff'), url('../webfonts/Mavenproblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
