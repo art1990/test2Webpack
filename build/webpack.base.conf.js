@@ -31,7 +31,7 @@ externals: {
                 exclude: "/node_loaders/"
             },
             {
-                test: /\.(png|jpg)$/,
+                test: /\.(png|jpg|gif|svg)$/,
                 loader: "file-loader",
                 options: {
                     name: "[name].[ext]"
