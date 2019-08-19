@@ -4,14 +4,14 @@
 @import "utils/fonts";
 @import "utils/reset";
 
-@import "header";
-@import "footer";
+
+
 
 $fa-font-path: "~font-awesome/fonts";
 @import "~@fortawesome/fontawesome-free/css/all.css";
 $fa-font-path: "../fonts" !default;
 
-html {
+/*html {
   line-height: $mainLineHeight;
   font-size: $mainFontSize;
   color: $mainFontColor;
@@ -25,7 +25,7 @@ html {
   @media screen and (max-width: $phoneWidth) {
     font-size: 14px;
   }
-}
+}*/
 
 body {
   margin: 0;
@@ -34,9 +34,9 @@ body {
   font-size: $mainFontSize;
   font-weight: $mainFontWeight;
   line-height: $mainLineHeight;
+  color: $mainFontColor;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: background-image 2s;
 }
 
 *,
@@ -121,6 +121,7 @@ body {
   background-position-x: center;
   max-width: 1440px;
   margin: 0 auto;
+  transition: all  2s;
 }
 
 h2 {
@@ -140,6 +141,20 @@ h3 {
   color: #0b2a37;
   font-weight: 900;
   text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*.visible{
+  display: block;
+  transition: all 2s;
+}*/
+
+.hidden{
+  display: none;
+  //transition: all 2s;
 }
 
 .main {
@@ -188,7 +203,7 @@ h3 {
   font-size: rem(18px);
   line-height: rem(38px);
   font-weight: 700;
-  display: none;
+  //display: none;
 }
 
 .main__form_find {
@@ -208,16 +223,18 @@ h3 {
   line-height: rem(38px);
   font-weight: 700;
   display: inline-block;
-  //margin-top: 38px;
+  &:hover{
+    background-color: #ff7676;
+    transition: all 0.5s;
+  }
+
 }
 .main__become {
   display: flex;
-  //height: 80px;
   padding: 2.1% 0;
   background: #eff7f7;
   justify-content: center;
   align-items: center;
-  //margin: 154px auto 0 auto;
   margin: 10.5% auto 0 auto;
   color: #0b2a37;
   a {
@@ -232,7 +249,6 @@ h3 {
   z-index: 2;
 
   h3 {
-    //padding: 25px 0 50px 0;
     padding: 0.3% 0 5% 0;
   }
   ul {
@@ -250,12 +266,8 @@ h3 {
       flex-direction: column;
       max-width: 22%;
       height: 49%;
-      //font-size: 16px;
-      //line-height: 22px;
       color: #0b2a37;
-      //font-weight: 400;
       &:nth-child(even) {
-        //margin-left: auto;
         strong {
           margin-bottom: 5%;
         }
@@ -272,16 +284,13 @@ h3 {
 .main__instruction {
   position: relative;
   z-index: 10;
-  //height: 870px;
-  padding-bottom: 10%;
+  padding-bottom: 7.5%;
   background: #66cfcf;
   display: flex;
   flex-direction: row;
   justify-content: stretch;
-  //width: 100%;
   section {
     display: flex;
-    //flex: 0 0 0;
     flex-direction: column;
     width: 45%;
     text-align: left;
@@ -292,8 +301,12 @@ h3 {
       width: 48%;
       padding: 4% 0;
       margin-top: 11%;
+      &:hover{
+        background: #ffffff;
+        color: #66cfcf;
+        transition: all 0.5s;
+      }
     }
-    //margin: 126px 0 0 3%;
   }
 }
 
@@ -303,6 +316,10 @@ ol {
   justify-content: end;
   width: 55%;
   li {
+    img{
+    //max-width: 100%;
+    height: auto;
+    }
     .icons {
       padding-right: 4%;
       margin-top: -3%;
@@ -315,6 +332,10 @@ ol {
     padding-right: 6%;
 
     article {
+      img{
+        //max-width: 100%;
+        //height: auto;
+      }
       max-width: 14em;
       text-align: start;
       p {
@@ -323,11 +344,6 @@ ol {
         font-weight: 700;
         padding-bottom: 4%;
       }
-      //aside {
-      //  font-size: 16px;
-      //  line-height: 22px;
-      //  font-weight: 400;
-      //}
     }
   }
   & li:nth-child(even) {
@@ -364,8 +380,10 @@ ol {
   position: relative;
   z-index: 10;
   margin-top: -7.5%;
+  padding-bottom: 3.5em;
   h3 {
     margin: 7.5% auto 0.5% auto;
+    padding-top: 1.8em;
   }
   .all_comments {
     display: flex;
@@ -416,7 +434,7 @@ ol {
   display: flex;
   flex-direction: row-reverse;
   //align-items: start;
-  padding: 12% 0;
+  padding: 10% 0 11.5% 0;
   div {
     width: 60%;
     margin-left: 22%;
@@ -429,9 +447,14 @@ ol {
     line-height: rem(38px);
     font-weight: 700;
     text-align: center;
-    padding: 2.4% 6.8%;
+    padding: 2% 6.8%;
     border-radius: 0.3em;
     margin-top: 7%;
+    &:hover{
+      background: #ffffff;
+      color: #0b2a37;
+      transition: all 0.5s;
+    }
   }
   ul {
     width: 40%;
@@ -448,10 +471,11 @@ ol {
   }
 }
 .main__more {
-  height: 100%;
+  //height: 100%;
   background-color: #ffffff;
   color: #0b2a37;
   padding-top: 1.8%;
+  padding-bottom: 0.01em;
   h3 {
     font-size: rem(36px);
     line-height: rem(24px);
@@ -470,9 +494,22 @@ ol {
     line-height: rem(38px);
     font-weight: 700;
     margin: 3.6% auto;
+    &:hover{
+      background-color: #ff7676;
+      transition: all 0.5s;
+    }
   }
 }
 
 
+
+
+
+
+
+
+@import "header";
+@import "footer";
+@import "media";
 // Modules
 // @import "modules/my-module.scss";

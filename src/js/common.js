@@ -1,10 +1,15 @@
-document.getElementsByClassName("main__btn_find")[0].onmouseover = ({target}) => {
-    const input = document.getElementsByClassName("main__input_find")[0]
-    input.style.display = "inline-block";
-    target.onmouseout = () => {
-        input.style.display = "none"
-    }
-};
+
+const btnFind = document.getElementsByClassName("main__btn_find")[0];
+const inputFind = document.getElementsByClassName("main__input_find")[0];
+const mainFind  = document.getElementsByClassName("main__form_find")[0]
+
+mainFind.addEventListener("mouseover", ({target})=> {
+        inputFind.classList.remove("hidden")
+})
+
+mainFind.addEventListener("mouseout", ()=> {
+        inputFind.classList.add("hidden")
+})
 
 const allComment = document.getElementsByClassName("all_comments")[0];
 const user1 = allComment.querySelector(".article_user1");
@@ -18,10 +23,9 @@ for (let i = 0; i < 4; i++) {
     allComment.appendChild(copyComment)
 }
 
-// let count = 2;
-// window.setInterval(() => {
-//     count = count%4;
-//     if(count) {
-//     document.body.style.backgroundImage = `url(/assets/img/slider/slide${count}.png)`;}
-//     count++
-// }, 10000);
+let count = 2;
+window.setInterval(() => {
+        count = count%4? count: 1;
+     document.body.style.backgroundImage = `url(/assets/img/slider/slide${count}.png)`;
+     count++
+ }, 10000);
