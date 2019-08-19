@@ -1,138 +1,268 @@
 @import "utils/vars";
 
-@media screen and (max-width: $mainWidth){
-/*good*/
+@media screen and (max-width: $mainWidth) {
+  /*good*/
 }
 
-@media screen and (max-width: 1280px){
-        h2{
-            font-size: rem(55px);
-  line-height: rem(90px);
-  font-weight: 700;
+@media screen and (max-width: 1280px) {
+  .main__instruction {
+    padding-bottom: 6%;
+    section {
+      width: 84%;
+      padding-right: 0;
+      padding-left: 10%;
     }
-    ol {
-        font-size: rem(15);
-        line-height: rem(22);
-        width: 80%;
+  }
+  h2 {
+    font-size: rem(55px);
+    line-height: rem(90px);
+    font-weight: 700;
+  }
+  .main__instruction_list {
+    font-size: rem(15);
+    line-height: rem(22);
+    width: 100%;
+    padding-right: 3.5%;
 
-        li:nth-child(1) {
-            padding-right: 2.5em;
-        }
-
-        li {
-            padding: 0;
-            margin-bottom: 30px;
-            p{
-                margin-bottom: 0.5em;
-            }
-            aside {
-                width: 150%;
-               
-            }
+    li:nth-child(1) {
+      padding-right: 2.5em;
     }
-}
 
-    .arrow_right, .arrow_left{
+    li {
+      padding: 0;
+      aside {
+        width: 150%;
+        margin-bottom: 0.5em;
+      }
+      .arrow_right,
+      .arrow_left {
         width: 15em;
         height: auto;
+      }
+      img.arrow_left {
+        margin-left: -5%;
+      }
     }
+  }
 
-    .menu__side{
-        div{
-            padding-right: 0;
-            width: 40%;
-            margin-left: 11%
+  .menu__side {
+    background-position: right -50% bottom -70%;
+    div {
+      padding-right: 0;
+      width: 40%;
+      margin-left: 11%;
+    }
+    ul {
+      width: 50%;
+    }
+  }
+
+  .footer__follow {
+    address {
+      width: 59.8%;
+    }
+  }
+
+  .footer {
+    padding: 6.4% 3.3% 6%;
+    section nav strong {
+      margin-bottom: 0.8em;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header .header__logo {
+    width: 9em;
+  }
+  .main .main__find_guardian {
+    h1 {
+      font-size: rem(60px);
+      line-height: rem(30px);
+    }
+    & > p {
+      font-size: rem(40px);
+      line-height: rem(30px);
+    }
+  }
+
+  .main__specialist {
+    padding: 7% 2.5% 10% 2.5%;
+  }
+  h2 {
+    font-size: rem(30px);
+    line-height: rem(50px);
+    font-weight: 700;
+  }
+  .arrow_right,
+  .arrow_left {
+    display: none;
+  }
+
+  .main__instruction {
+    section {
+      width: 69%;
+    }
+  }
+  ol {
+    margin-left: 6%;
+    li {
+      margin-bottom: 4%;
+      padding: 0;
+      justify-content: flex-start;
+      article {
+        text-align: start;
+        p {
+          text-align: start;
+          margin-bottom: 0;
         }
-        ul{
-            width: 50%;
+        aside {
+          text-align: start;
         }
+      }
     }
-        
-       
+  }
+  ol li:nth-child(even) {
+    flex-direction: row-reverse;
+    padding-right: 50px;
+    justify-content: flex-end;
+  }
 
+  .menu__side {
+    flex-direction: column;
+    div {
+      padding: 0;
+      margin-bottom: 5%;
+    }
+    ul {
+      width: 100%;
+    }
+  }
+
+  .main__more {
+    h3 {
+      line-height: 2.4rem;
+    }
+  }
+  .main__comment {
+    h3 {
+      padding-top: 0.7em;
+    }
+  }
+
+  .footer__logo {
+    width: 9em;
+  }
+  .footer section:not(.footer__follow) {
+    width: 40%;
+    strong {
+      font-size: rem(18px);
+    }
+  }
+  .footer__follow {
+    address {
+      width: 52%;
+    }
+  }
 }
 
-@media screen and (max-width: $smDesktopWidth){
-    .header .header__logo{
-        width: 9em;
-    }
-    .footer__logo{
-        width: 9em;
-    }
+@media screen and (max-width: 768px) {
+  body {
+    background-size: auto 10%;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 1em 2em;
+  }
 
-    h2{
-        font-size: rem(45px);
-        line-height: rem(60px);
-        font-weight: 700;
-}
-    .arrow_right, .arrow_left{
-        display: none;
-            }
-            ol {
-                margin-left: 2%;
-            li {
-                padding: 0;
-               justify-content: flex-start;
-               article{
-                    text-align: start;
-                    p {
-                        text-align: start;
-                    }
-                    aside{
-                        text-align: start;
-                    }
-                }
-            }
+  .main {
+    margin-top: 3%;
+    .main__find_guardian {
+      margin: 6px;
+      h1 {
+        font-size: rem(35px);
+        line-height: rem(15px);
+      }
+      & p:nth-child(2) {
+        font-size: rem(25px);
+        line-height: rem(40px);
+      }
+      & p:nth-child(3) {
+        font-size: rem(18px);
+        line-height: rem(18px);
+        max-width: 100%;
+      }
+    }
+  }
 
+  .main__specialist {
+    h3 {
+      font-size: rem(30px);
+      line-height: rem(25px);
+      margin-bottom: 5%;
+    }
+  }
+  .main__form_find {
+    margin-top: 7%;
+  }
+  .main__specialist ul li {
+    max-width: 44%;
+    margin: 0 auto 7% auto;
+  }
+
+  .main__instruction {
+    flex-direction: column;
+    section {
+      margin: 0 auto;
+      padding-left: 0;
+      h2 {
+        font-size: rem(25px);
+        text-align: center;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  .main__comment .all_comments article {
+    max-width: 100%;
+  }
+
+  .menu__side div {
+    width: 100%;
+  }
+
+  .footer__logo {
+    width: 58%;
+  }
+  .footer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    section {
+      margin-bottom: 4%;
+      nav {
+        font-size: rem(20px);
+        .strong_font {
+          font-size: rem(28px);
         }
-            ol li:nth-child(even){
-                    flex-direction: row-reverse;
-                    padding-right: 50px;
-                    justify-content: flex-end;
-                    
-
-            }
-
-.main__more {
-    h3{
-        line-height: 2.4rem;
+      }
     }
-}
-.main__comment{
-    h3{
-        padding-top: 0.7em;
+  }
+
+  .footer__follow {
+    width: 50%;
+    address {
+      width: 90%;
     }
+  }
 }
 
-.footer__follow{
-    address{
-        width: 72.8%;
-    }
+@media screen and (max-width: $phoneWidth) {
+  main {
+  }
 }
-
-
-}
-
-
-@media screen and (max-width: $tableWidth){
-    main{
-
-    }
-
-
-
-
-
-}
-
-@media screen and (max-width: $phoneWidth){
-    main{
-
-    }
-
-
-
-
-
-}
-
