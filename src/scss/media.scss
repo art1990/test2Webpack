@@ -4,7 +4,7 @@
   /*good*/
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: $desktopWidth) {
   h2 {
     font-size: rem(55px);
     line-height: rem(90px);
@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $smDesktopWidth) {
 
   h2 {
     font-size: rem(60px);
@@ -184,7 +184,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $tableWidth) {
   body {
     background-size: auto 10%;
   }
@@ -295,7 +295,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: $phoneWidth) {
   .btn_top{
     display: block;
     position: fixed;
