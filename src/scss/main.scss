@@ -56,6 +56,7 @@ button {
   color: $mainFontColor;
   text-decoration: none;
   background: none;
+  cursor: pointer;
 }
 
 ul,
@@ -112,12 +113,15 @@ li {
 //}
 
 body {
-  box-shadow: 0 0 0 800px rgba(23, 49, 83, 0.4) inset;
+  max-width: $mainWidth;
+  //box-shadow: 0 0 0 800px rgba(23, 49, 83, 0.4) inset;
+  //background-color: rgba(23, 49, 83, 0.3);
+  //background-blend-mode: darken;
   //background-size: 1440px;
   background-repeat: no-repeat;
   background-position-x: center;
-  height: auto;
-  background-size: 100%;
+  //height: 100%;
+  //background-size: 100%;
   margin: 0 auto;
   transition: all 2s;
 }
@@ -139,20 +143,14 @@ h3 {
   text-align: center;
 }
 
-button {
-  cursor: pointer;
-}
-
-/*.visible{
-  display: block;
-  transition: all 2s;
-}*/
 
 .hidden {
   display: none;
-  //transition: all 2s;
 }
 
+.btn_top{
+  display: none;
+}
 .main {
   margin-top: 10%;
   text-align: center;
@@ -163,15 +161,12 @@ button {
     line-height: rem(100px);
     color: #8ae2e2;
     font-weight: 900;
-    //letter-spacing: 0.017em;
-    //box-shadow: 0 0 3px rgba(0,0,0,0.2);
   }
 
   .main__find_guardian p {
     font-size: rem(58px);
     line-height: rem(100px);
     font-weight: 900;
-    //box-shadow: 0 0 3px rgba(0,0,0,0.2);
     &:nth-child(2) {
       line-height: rem(70px);
       margin-bottom: 0.54em;
@@ -181,7 +176,6 @@ button {
       font-size: rem(26px);
       line-height: rem(38px);
       font-weight: 400;
-      //box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
       max-width: 57%;
       margin: 0 auto;
 
@@ -192,26 +186,20 @@ button {
   }
 }
 .main__input_find {
-  //width: 400px;
-  //height: 70px;
   padding: 1% 10%;
   border-radius: 0.4em;
   font-size: rem(18px);
   line-height: rem(38px);
   font-weight: 700;
-  //display: none;
 }
 
 .main__form_find {
   display: flex;
   justify-content: center;
   align-content: center;
-  //margin-top: 38px;
   margin-top: 2.7%;
 }
 .main__btn_find {
-  //width: 274px;
-  //height: 70px;
   padding: 1% 3%;
   border-radius: 0.4em;
   background-color: #ff5151;
@@ -239,7 +227,6 @@ button {
 }
 .main__specialist {
   background: #ffffff;
-  //height: 38em;
   position: relative;
   padding: 7% 0 10% 0;
   z-index: 2;
@@ -261,7 +248,7 @@ button {
       justify-content: space-between;
       flex-direction: column;
       max-width: 22%;
-      height: 49%;
+      //height: 49%;
       color: #0b2a37;
       &:nth-child(even) {
         strong {
@@ -329,10 +316,6 @@ ol {
     padding-right: 6%;
 
     article {
-      img {
-        //max-width: 100%;
-        //height: auto;
-      }
       max-width: 14em;
       text-align: start;
       p {
@@ -429,17 +412,17 @@ ol {
   background-color: #005173;
   background-image: url(/assets/img/shape.png);
   background-repeat: no-repeat;
-  background-position: right -57% bottom -261%;
-  background-size: 70%;
+  background-position: right -14% bottom -41%;
+  //background-size: 60%;
   height: auto;
   z-index: 5;
   display: flex;
   flex-direction: row-reverse;
-  //align-items: start;
-  padding: 10% 0 11.5% 0;
+  padding: 12.5% 0 12.5% 0;
   div {
     width: 60%;
-    margin-left: 22%;
+    //margin-left: 22%;
+    padding-left: 12%;
     padding-top: 5.5%;
     text-align: start;
   }
@@ -459,7 +442,7 @@ ol {
     }
   }
   ul {
-    width: 40%;
+    width: 42%;
     display: flex;
     flex-direction: column;
     padding-left: 7.6%;
@@ -473,7 +456,6 @@ ol {
   }
 }
 .main__more {
-  //height: 100%;
   background-color: #ffffff;
   color: #0b2a37;
   padding-top: 1.8%;
@@ -508,3 +490,7 @@ ol {
 @import "media";
 // Modules
 // @import "modules/my-module.scss";
+
+/** {
+  border: 1px solid #f00 !important;
+}*/
