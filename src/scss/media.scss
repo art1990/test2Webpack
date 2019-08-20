@@ -5,6 +5,49 @@
 }
 
 @media screen and (max-width: $desktopWidth) {
+  .arrow_right,
+  .arrow_left {
+    display: none;
+  }
+
+  .main__instruction {
+    section {
+      width: 69%;
+      h2{
+        font-size: rem(30px);
+        line-height: rem(50px);
+      }
+    }
+  }
+  .main__instruction_list {
+    padding-right: 2%;
+    margin-left: 4%;
+    li {
+      margin-bottom: 4%;
+      padding: 0;
+      justify-content: flex-start;
+      .icons,
+      img.main__cursor {
+        padding-right: 4%;
+      }
+      article {
+        max-width: 100%;
+        text-align: start;
+        p {
+          text-align: start;
+          margin-bottom: 0;
+        }
+        aside {
+          text-align: start;
+        }
+      }
+    }
+  }
+  ol li:nth-child(even) {
+    flex-direction: row-reverse;
+    padding-right: 50px;
+    justify-content: flex-end;
+  }
   h2 {
     font-size: rem(55px);
     line-height: rem(90px);
@@ -20,35 +63,29 @@
     }
   }
 
-  .main__instruction_list {
-    font-size: rem(15);
-    line-height: rem(22);
-    width: 100%;
-    padding-right: 3.5%;
-
-    li:nth-child(1) {
-      padding-right: 2.5em;
-    }
-
-    li {
-      padding: 0;
-      p {
-        padding-bottom: 1em;
-      }
-      aside {
-        width: 150%;
-        margin-bottom: 0.5em;
-      }
-      .arrow_right,
-      .arrow_left {
-        width: 15em;
-        height: auto;
-      }
-      img.arrow_left {
-        margin-left: -5%;
-      }
-    }
-  }
+  //.main__instruction_list {
+  //  font-size: rem(15);
+  //  line-height: rem(22);
+  //  width: 100%;
+  //  padding-right: 3.5%;
+  //
+  //  li:nth-child(1) {
+  //    padding-right: 2.5em;
+  //  }
+  //
+  //  li {
+  //    padding: 0;
+  //    p {
+  //      padding-bottom: 1em;
+  //    }
+  //    aside {
+  //      margin-bottom: 0.5em;
+  //    }
+  //    img.arrow_left {
+  //      margin-left: -5%;
+  //    }
+  //  }
+  //}
 
   .menu__side {
     background-position: right -50% bottom -70%;
@@ -76,6 +113,22 @@
 }
 
 @media screen and (max-width: $smDesktopWidth) {
+  .main__instruction{
+    .main__instruction_list{
+      .item{
+        padding-right: 0;
+      }
+    }
+  }
+
+  ol li:nth-child(4) article{
+    max-width: 100%;
+  }
+  .arrow_right,
+  .arrow_left {
+    width: 0;
+    //display: none;
+  }
   h2 {
     font-size: rem(60px);
     line-height: rem(50px);
@@ -105,39 +158,6 @@
     display: none;
   }
 
-  .main__instruction {
-    section {
-      width: 69%;
-    }
-  }
-  .main__instruction_list {
-    margin-left: 6%;
-    li {
-      margin-bottom: 4%;
-      padding: 0;
-      justify-content: flex-start;
-      .icons,
-      img.main__cursor {
-        padding-right: 4%;
-      }
-      article {
-        text-align: start;
-        p {
-          text-align: start;
-          margin-bottom: 0;
-        }
-        aside {
-          text-align: start;
-        }
-      }
-    }
-  }
-  ol li:nth-child(even) {
-    flex-direction: row-reverse;
-    padding-right: 50px;
-    justify-content: flex-end;
-  }
-
   .menu__side {
     flex-direction: column;
     padding-right: 6%;
@@ -145,6 +165,7 @@
     div {
       padding-left: 14%;
       margin-bottom: 5%;
+      width: 84%;
     }
     ul {
       width: 100%;
@@ -182,6 +203,14 @@
       width: 49%;
     }
   }
+}
+@media screen and (min-width: $tableWidth) and (max-width: $smDesktopWidth){
+  .main__instruction{
+    section{
+        width: 54%;
+    }
+  }
+
 }
 
 @media screen and (max-width: $tableWidth) {
@@ -235,6 +264,7 @@
   .main__instruction {
     flex-direction: column;
     ol {
+      width: 98%;
       margin: 5% 0;
       padding-left: 5%;
       & > li {
