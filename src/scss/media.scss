@@ -119,8 +119,6 @@
       justify-content: flex-start;
       .icons, img.main__cursor {
         padding-right: 4%;
-      
-
       }
       article {
         text-align: start;
@@ -145,7 +143,7 @@
     padding-right: 6%;
     padding-top: 6%;
     div {
-      padding-left: 14;
+      padding-left: 14%;
       margin-bottom: 5%;
     }
     ul {
@@ -316,7 +314,7 @@
   .header{
     position: fixed;
     background: rgba(23, 49, 83, 0.3);
-    top: 0%;
+    top: 0;
     z-index: 100;
     height: 10%;
     padding: 0;
