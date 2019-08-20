@@ -29,4 +29,3 @@ window.setInterval(() => {
   document.body.style.backgroundImage = `linear-gradient(to top, rgba(23, 49, 83, 0.35), rgba(23, 49, 83, 0.35)),url(/assets/img/slider/slide${count}.png)`;
   count++;
 }, 10000);
-

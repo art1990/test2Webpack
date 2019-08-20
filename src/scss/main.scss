@@ -8,7 +8,6 @@ $fa-font-path: "~font-awesome/fonts";
 @import "~@fortawesome/fontawesome-free/css/all.css";
 $fa-font-path: "../fonts" !default;
 
-
 body {
   margin: 0;
   padding: 0;
@@ -51,7 +50,6 @@ li {
   list-style-type: none;
 }
 
-
 body {
   max-width: $mainWidth;
   background-size: 1440px;
@@ -75,13 +73,11 @@ h3 {
   text-align: center;
 }
 
-
-
 .hidden {
   display: none;
 }
 
-.btn_top{
+.btn_top {
   display: none;
 }
 .main {
@@ -411,14 +407,11 @@ ol {
   }
 }
 
-
 // Modules
 // @import "modules/my-module.scss";
 @import "header";
 @import "footer";
 @import "media";
-
-
 
 /** {
   border: 1px solid #f00 !important;
