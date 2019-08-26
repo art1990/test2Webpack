@@ -20,8 +20,8 @@ externals: {
     output: {
         filename: `${PATH.assets}js/[name].js`,
         path: PATH.dist,
-        publicPath: "./"
-        // publicPath: "/"
+        // publicPath: "./"
+        publicPath: "/"
     },
     module: {
         rules: [
@@ -46,7 +46,7 @@ externals: {
                         options: {
                             name: '[name].[ext]',
                             outputPath: `${PATH.assets}/fonts`,
-                            publicPath: "../fonts/"
+                            // publicPath: "../fonts/"
                         }
                     }
                 ]
