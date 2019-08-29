@@ -29,3 +29,11 @@ window.setInterval(() => {
   document.body.style.backgroundImage = `linear-gradient(to top, rgba(23, 49, 83, 0.35), rgba(23, 49, 83, 0.35)),url(/assets/img/slider/slide${count}.png)`;
   count++;
 }, 10000);
+
+console.log(window.pageYOffset)
+
+window.onscroll = () => {
+  if(window.pageYOffset > 1){
+    document.getElementsByClassName("header")[0].style.background = "white"
+  }else{ document.getElementsByClassName("header")[0].style.background = "transparent"}
+}

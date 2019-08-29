@@ -103,4 +103,4 @@ externals: {
             {from: `${PATH.src}/static`, to: ""},
         ])
       ],
-}
+};
