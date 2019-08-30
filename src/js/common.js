@@ -1,6 +1,7 @@
-const btnFind = document.getElementsByClassName("main__btn_find")[0];
-const inputFind = document.getElementsByClassName("main__input_find")[0];
-const mainFind = document.getElementsByClassName("main__form_find")[0];
+const btnFind = document.querySelector(".main__btn_find");
+const inputFind = document.querySelector(".main__input_find");
+const mainFind = document.querySelector(".main__form_find");
+const header = document.querySelector(".header");
 
 mainFind.addEventListener("mouseover", ({ target }) => {
   inputFind.classList.remove("hidden");
@@ -10,7 +11,7 @@ mainFind.addEventListener("mouseout", () => {
   inputFind.classList.add("hidden");
 });
 
-const allComment = document.getElementsByClassName("all_comments")[0];
+const allComment = document.querySelector(".all_comments");
 const user1 = allComment.querySelector(".article_user1");
 const user2 = allComment.querySelector(".article_user2");
 for (let i = 0; i < 4; i++) {
@@ -30,10 +31,10 @@ window.setInterval(() => {
   count++;
 }, 10000);
 
-console.log(window.pageYOffset)
 
 window.onscroll = () => {
   if(window.pageYOffset > 1){
-    document.getElementsByClassName("header")[0].style.background = "white"
-  }else{ document.getElementsByClassName("header")[0].style.background = "transparent"}
-}
+    header.classList.add("header-white")
+  }else{ 
+    header.classList.remove("header-white")
+  }}
