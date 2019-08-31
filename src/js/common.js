@@ -32,12 +32,12 @@ window.setInterval(() => {
   count++;
 }, 10000);
 
-
 window.onscroll = () => {
-  if(window.pageYOffset > 1){
+  if (window.pageYOffset > 1) {
     header.classList.add("header__white");
-    btnCall.textContent = "Call +48 567 365 485"
-  }else{ 
+    btnCall.textContent = "Call +48 567 365 485";
+  } else {
     header.classList.remove("header__white");
-    btnCall.textContent = "CALL US"
-  }};
+    btnCall.textContent = "CALL US";
+  }
+};
