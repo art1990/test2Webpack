@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254 192" width="254" height="192">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #ffffff;stroke-width: 2 } 
+		.shp1 { fill: #ffffff } 
+	</style>
+	<g id="how-it-works">
+		<g id="steps">
+			<path id="connection-arrow" class="shp0" d="M164 181C213.71 181 254 140.71 254 91C254 41.29 213.71 1 164 1C114.29 1 0 1 0 1" />
+			<path id="arrow" class="shp1" d="M162.86 183L177 174.86L177 191.14L162.86 183Z" />
+		</g>
+	</g>
+</svg>
