@@ -46,7 +46,7 @@ externals: {
                         options: {
                             name: '[name].[ext]',
                             outputPath: `${PATH.assets}/fonts`,
-                            // publicPath: "../fonts/"
+                            publicPath: "../fonts/"
                         }
                     }
                 ]
