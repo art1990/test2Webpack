@@ -5,6 +5,13 @@
 }
 
 @media screen and (max-width: $desktopWidth) {
+  .header{
+  .menu{
+    & .header__menu{
+      width: 34%;
+    }
+  }
+  }
   .arrow_right,
   .arrow_left {
     display: none;
@@ -93,6 +100,21 @@
 }
 
 @media screen and (max-width: $smDesktopWidth) {
+
+  .header{
+   & a:nth-child(2) {
+     max-width: 20%;
+     .header__logo2{
+
+      width: 60%;
+     }
+    }
+    .menu{
+      & .header__menu{
+        width: 45%;
+      }
+    }
+  }
   .main__instruction{
     .main__instruction_list{
       .item{
@@ -186,8 +208,24 @@
   }
 
 }
-
+@media screen and (max-width: 500px) {
+  .header.header__white{
+    padding-left: 6%;
+  }
+  .header {
+    .header__logo2{
+      display: none;
+    }
+  }
+}
 @media screen and (max-width: $tableWidth) {
+  .header .menu{
+    & .header__menu{
+      width: 68%;
+      background-color: rgba(0 ,0 , 0 , 0.8);
+    }
+  }
+
   .btn_top {
     display: block;
     position: fixed;
@@ -203,14 +241,14 @@
   .header {
     flex-wrap: wrap;
     position: fixed;
-    background: rgba(23, 49, 83, 0.3);
+    //background: rgba(23, 49, 83, 0.3);
     top: 0;
     z-index: 100;
     padding: 1% 0;
     width: 100%;
     justify-content: space-between;
-    .header__menu{
-      padding-right: 15%;
+    .menu{
+      padding-right: 5%;
     }
     .header_btn {
       font-size: 70%;

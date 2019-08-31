@@ -4,8 +4,9 @@
   "description": "webpack templates",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
-    "build": "webpack --config ./build/webpack.build.conf.js"
+    "dev": "webpack-dev-server --open --config buildConfig/webpack.dev.conf.js",
+    "build": "webpack --config buildConfig/webpack.build.conf.js",
+    "deploy": "gh-pages -d buildConfig"
   },
   "browserslist": [
     "> 1%",

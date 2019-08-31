@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.9% 2% 1% 0;
+  padding: 1.5% 2% 1.5% 0;
 
   .header__logo {
     width: 16.2em;
@@ -59,7 +59,8 @@
       align-items: center;
     }
     &:hover .header__menu{
-      display: flex;
+      visibility: visible;
+
     }
     &:hover > * {
       color: #0b2a37;
@@ -68,21 +69,21 @@
     .header__menu {
       z-index: 5;
       display: flex;
-      margin-top: 2%;
-      //display: none;
+      visibility: hidden;
       flex-direction: column;
       align-items: center;
       right: 1%;
-      //padding: 0 1.8%;
       position: absolute;
+      margin-top: 1%;
       line-height: 38px;
       background: rgba(0 ,0 , 0 , 0.5);
       font-size: 100%;
       width: 30%;
+      transition: all 0.5s;
       li{
         display: flex;
         justify-content: center;
-        border: 1px solid rgba(11, 42, 55, 0.49);
+        border: 1px inset rgba(11, 42, 55, 0.49);
         box-sizing: border-box;
         width: 100%;
         text-align: center;
@@ -104,7 +105,7 @@
   }
 }
 
-.header-white{
+.header__white{
   background: white;
   & > a, nav > a{
     color: #0b2a37;
@@ -112,16 +113,30 @@
   & .header__log_in:hover,
   & .header__sign_up:hover,
   & .menu a:hover{
-    color: #0b2a37a1;
+    color: #ff5151;
   }
-  & button.header__call, & button.header__help{
+  & button.header__help{
     display: none
+  }
+  & button.header__call{
+    color: #005173;
+    &:hover{
+      color: #ff5151;
+    }
   }
   .header__logo{
     display: none;
   }
   .header__logo2{
     display: block;
+    margin: 0 2em;
+   &:hover {
+      transition: all 0.3s;
+      transform: scale(1.1);
+    }
+  }
+  .header__menu li:hover a:hover{
+    color: #ff5151;
   }
   
 }

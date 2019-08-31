@@ -2,6 +2,7 @@ const btnFind = document.querySelector(".main__btn_find");
 const inputFind = document.querySelector(".main__input_find");
 const mainFind = document.querySelector(".main__form_find");
 const header = document.querySelector(".header");
+const btnCall = document.querySelector(".header__call");
 
 mainFind.addEventListener("mouseover", ({ target }) => {
   inputFind.classList.remove("hidden");
@@ -34,7 +35,9 @@ window.setInterval(() => {
 
 window.onscroll = () => {
   if(window.pageYOffset > 1){
-    header.classList.add("header-white")
+    header.classList.add("header__white");
+    btnCall.textContent = "Call +48 567 365 485"
   }else{ 
-    header.classList.remove("header-white")
-  }}
+    header.classList.remove("header__white");
+    btnCall.textContent = "CALL US"
+  }};
