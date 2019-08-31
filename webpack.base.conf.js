@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const PATH = {
     src: path.join(__dirname, "../src"),
-    dist: path.join(__dirname, "../docs"),
+    dist: path.join(__dirname, "../build"),
     assets: "assets/",
 };
 
