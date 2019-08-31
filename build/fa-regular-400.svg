@@ -1,1 +1,1 @@
-module.exports = __webpack_public_path__ + "assets/fonts/fa-regular-400.svg";
+module.exports = "../fonts/fa-regular-400.svg";

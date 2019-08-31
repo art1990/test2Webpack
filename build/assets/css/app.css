@@ -1,5 +1,5 @@
 
-@font-face{font-family:Maven Pro;src:url(/test3/assets/fonts/Mavenproregular.woff2) format("woff2"),url(/test3/assets/fonts/Mavenproregular.woff) format("woff"),url(/test3/assets/fonts/Mavenproregular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:Maven Pro;src:local("Maven Pro Medium"),local("MavenProMedium"),url(/test3/assets/fonts/Mavenpromedium.woff2) format("woff2"),url(/test3/assets/fonts/Mavenpromedium.woff) format("woff"),url(/test3/assets/fonts/Mavenpromedium.ttf) format("truetype");font-weight:500;font-style:normal}@font-face{font-family:Maven Pro;src:local("Maven Pro Bold"),local("MavenProBold"),url(/test3/assets/fonts/Mavenprobold.woff2) format("woff2"),url(/test3/assets/fonts/Mavenprobold.woff) format("woff"),url(/test3/assets/fonts/Mavenprobold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:Maven Pro;src:local("Maven Pro Black"),local("MavenProBlack"),url(/test3/assets/fonts/Mavenproblack.woff2) format("woff2"),url(/test3/assets/fonts/Mavenproblack.woff) format("woff"),url(/test3/assets/fonts/Mavenproblack.ttf) format("truetype");font-weight:900;font-style:normal}
+@font-face{font-family:Maven Pro;src:url(../fonts/Mavenproregular.woff2) format("woff2"),url(../fonts/Mavenproregular.woff) format("woff"),url(../fonts/Mavenproregular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:Maven Pro;src:local("Maven Pro Medium"),local("MavenProMedium"),url(../fonts/Mavenpromedium.woff2) format("woff2"),url(../fonts/Mavenpromedium.woff) format("woff"),url(../fonts/Mavenpromedium.ttf) format("truetype");font-weight:500;font-style:normal}@font-face{font-family:Maven Pro;src:local("Maven Pro Bold"),local("MavenProBold"),url(../fonts/Mavenprobold.woff2) format("woff2"),url(../fonts/Mavenprobold.woff) format("woff"),url(../fonts/Mavenprobold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:Maven Pro;src:local("Maven Pro Black"),local("MavenProBlack"),url(../fonts/Mavenproblack.woff2) format("woff2"),url(../fonts/Mavenproblack.woff) format("woff"),url(../fonts/Mavenproblack.ttf) format("truetype");font-weight:900;font-style:normal}
 /*!
  * Font Awesome Free 5.10.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -4368,8 +4368,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url(/test3/assets/fonts/fa-brands-400.eot);
-  src: url(/test3/assets/fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(/test3/assets/fonts/fa-brands-400.woff2) format("woff2"), url(/test3/assets/fonts/fa-brands-400.woff) format("woff"), url(/test3/assets/fonts/fa-brands-400.ttf) format("truetype"), url(/test3/fa-brands-400.svg#fontawesome) format("svg"); }
+  src: url(../fonts/fa-brands-400.eot);
+  src: url(../fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(../fonts/fa-brands-400.woff2) format("woff2"), url(../fonts/fa-brands-400.woff) format("woff"), url(../fonts/fa-brands-400.ttf) format("truetype"), url(./fa-brands-400.svg#fontawesome) format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -4378,8 +4378,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url(/test3/assets/fonts/fa-regular-400.eot);
-  src: url(/test3/assets/fonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(/test3/assets/fonts/fa-regular-400.woff2) format("woff2"), url(/test3/assets/fonts/fa-regular-400.woff) format("woff"), url(/test3/assets/fonts/fa-regular-400.ttf) format("truetype"), url(/test3/fa-regular-400.svg#fontawesome) format("svg"); }
+  src: url(../fonts/fa-regular-400.eot);
+  src: url(../fonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(../fonts/fa-regular-400.woff2) format("woff2"), url(../fonts/fa-regular-400.woff) format("woff"), url(../fonts/fa-regular-400.ttf) format("truetype"), url(./fa-regular-400.svg#fontawesome) format("svg"); }
 
 .far {
   font-family: 'Font Awesome 5 Free';
@@ -4389,8 +4389,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url(/test3/assets/fonts/fa-solid-900.eot);
-  src: url(/test3/assets/fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(/test3/assets/fonts/fa-solid-900.woff2) format("woff2"), url(/test3/assets/fonts/fa-solid-900.woff) format("woff"), url(/test3/assets/fonts/fa-solid-900.ttf) format("truetype"), url(/test3/fa-solid-900.svg#fontawesome) format("svg"); }
+  src: url(../fonts/fa-solid-900.eot);
+  src: url(../fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../fonts/fa-solid-900.woff2) format("woff2"), url(../fonts/fa-solid-900.woff) format("woff"), url(../fonts/fa-solid-900.ttf) format("truetype"), url(./fa-solid-900.svg#fontawesome) format("svg"); }
 
 .fa,
 .fas {

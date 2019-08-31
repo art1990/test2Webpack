@@ -2,11 +2,12 @@
   "name": "test2webpack",
   "version": "1.0.0",
   "description": "webpack templates",
+  "homepage": "https://github.com/art1990/test2Webpack",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config buildConfig/webpack.dev.conf.js",
     "build": "webpack --config buildConfig/webpack.build.conf.js",
-    "deploy": "gh-pages -d buildConfig"
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "> 1%",
