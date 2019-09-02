@@ -28,9 +28,9 @@ for (let i = 0; i < 4; i++) {
 let count = 2;
 window.setInterval(() => {
   count = count % 4 ? count : 1;
-  document.body.style.backgroundImage = `linear-gradient(to top, rgba(23, 49, 83, 0.35), rgba(23, 49, 83, 0.35)),url(./assets/img/slider/slide${count}.png)`;
+  document.body.style.backgroundImage = `linear-gradient(to top, rgba(23, 49, 83, 0.35), rgba(23, 49, 83, 0.35)),url(./assets/img/slider/slide${count}.svg)`;
   count++;
-}, 10000);
+}, 60000);
 
 window.onscroll = () => {
   if (window.pageYOffset > 1) {
