@@ -5,6 +5,8 @@
   top:0;
   z-index: 100;
   width: 100%;
+  min-width: 480px;
+  max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,8 +30,9 @@
     border: 2px solid $mainFont;
     border-radius: 6px;
     &:hover {
-      background: #ffffff;
-      color: #0b2a37;
+      //background: #ffffff;
+      //color: #0b2a37;
+      color: rgb(221, 221, 221);
       transition: all 0.5s;
     }
     &.header__help {
@@ -47,14 +50,16 @@
     text-align: right;
     padding-left: 3%;
     &:hover {
-      color: #0b2a37;
+      //color: #0b2a37;
+      //background-color: black;
+      color: rgb(221, 221, 221);
       transition: all 0.5s;
     }
   }
   .menu {
     cursor: pointer;
     align-items: center;
-    a{
+    .menu_div{
       display: flex;
       align-items: center;
     }
@@ -69,32 +74,34 @@
     .header__menu {
       z-index: 5;
       display: flex;
-      visibility: hidden;
+      //visibility: hidden;
       flex-direction: column;
       align-items: center;
       right: 1%;
       position: absolute;
+      //left: 1%;
       margin-top: 1%;
       line-height: 38px;
-      background: rgba(0 ,0 , 0 , 0.5);
+      background: rgb(167, 167, 167);
       font-size: 100%;
-      width: 30%;
+      //width: 30%;
       transition: all 0.5s;
       li{
         display: flex;
         justify-content: center;
-        border: 1px inset rgba(11, 42, 55, 0.49);
+        //border: 1px inset rgba(11, 42, 55, 0.49);
         box-sizing: border-box;
         width: 100%;
         text-align: center;
       }
       a:hover{
-        font-size: 110%;
+        //font-size: 110%;
         width: 100%;
         background: white;
-        text-shadow: 1px 2px 3px #0b2a37;
+        //text-shadow: 1px 2px 3px #0b2a37;
         color: #0b2a37;
         transition: all 0.5s;
+        //text-align: start;
       }
     }
     .fa-bars {
@@ -107,12 +114,12 @@
 
 .header__white{
   background: white;
-  & > a, nav > a{
+  & > a, nav > a, div{
     color: #0b2a37;
   };
   & .header__log_in:hover,
   & .header__sign_up:hover,
-  & .menu a:hover{
+  & .menu_div:hover{
     color: #ff5151;
   }
   & button.header__help{

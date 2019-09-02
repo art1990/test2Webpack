@@ -52,7 +52,8 @@ li {
 
 body {
   max-width: $mainWidth;
-  background-size: 1440px;
+  background-size: 1438px;
+  min-width: 480px;
   background-repeat: no-repeat;
   background-position-x: center;
   margin: 0 auto;
