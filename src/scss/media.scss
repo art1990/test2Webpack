@@ -42,9 +42,17 @@
       img.main__cursor {
         padding-right: 4%;
       }
+      img{
+        max-width: 100%;
+        min-width: 20%;
+      }
       article {
         max-width: 100%;
         text-align: start;
+        img.icons{
+          max-width: 100%;
+          min-width: 20%;
+        }
         p {
           text-align: start;
           margin-bottom: 0;
@@ -220,22 +228,63 @@
   }
 
 }
+@media screen and (max-width: 645px){
+  .header .header__logo{
+    margin: 0 1em;
+  }
+  main.main .main__find_guardian p:nth-child(3){
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 620px){
+  header.header{
+    img.header__logo{
+      width: 6em;
+    }
+    button.header_btn {
+      font-size: 50%;
+    }
+  .header_btn.header__help{
+    margin-right: 1%;
+  }
+}
+}
+@media screen and (max-width: 605px){
+  header.header{
+      justify-content: flex-end;
+  }
+}
+
 @media screen and (max-width: 500px) {
-  .header.header__white{
-    padding-left: 6%;
+  header.header .header_btn.header__help{
+    margin-right: 0.5%;
   }
   .header {
-    .header__logo2{
-      display: none;
+    .menu i.fa-bars{
+      //margin: 0 0.2em;
+      margin-right: 0.2em;
+    }
+    .header__logo{
+      margin-right: 0.4em;
     }
   }
 }
 @media screen and (max-width: $tableWidth) {
+  .header .menu .fa-bars{
+    //margin: 0 0.25em;
+  }
+  header.header{
+    .header__log_in{
+      padding-right: 2.5%;
+    }
+  .header__log_in, .header .header__sign_up{
+    padding-left: 2.5%;
+  }}
   .header .menu{
     & .header__menu{
       //width: 68%;
       //background-color: rgba(0 ,0 , 0 , 0.8);
-      right: 18%;
+      //right: 18%;
     }
   }
 
@@ -261,18 +310,21 @@
     width: 100%;
     justify-content: space-between;
     .menu{
-      padding-right: 5%;
+      padding-right: 2%;
+      &:hover .header__menu{
+        //margin-right: 5%;
+      }
     }
     .header_btn {
       font-size: 70%;
       line-height: 230%;
       &.header__help {
-        margin: 0 2% 0 auto;
-        padding: 0;
+        margin: 0 2% 0 0;
+        //padding: 0;
       }
       &.header__call {
         margin: 0 auto 0 0;
-        padding: 0;
+        //padding: 0;
       }
     }
   }
@@ -321,9 +373,24 @@
   .main__specialist ul li {
     max-width: 44%;
     margin: 0 auto 7% auto;
+    img{
+      max-width: 30%;
+    }
+    img.massage{
+      max-width: 40%;
+    }
   }
 
   .main__instruction {
+    .main__instruction_list li.item{
+      padding-bottom: 2%;
+      img.icons{
+        min-width: 15%;
+      }
+      section img.icons{
+        min-width: 15%;
+      }
+    }
     flex-direction: column;
     ol {
       width: 98%;
@@ -418,7 +485,7 @@
   .footer__follow {
     width: 46%;
     address{
-      width: 64%;
+      width: 63%;
     }
   }
 
