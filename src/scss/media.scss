@@ -1,10 +1,13 @@
 @import "utils/vars";
 
-@media screen and (max-width: $mainWidth) {
-  /*good*/
+@media screen and (min-width: $mainWidth) {
+  .header{
+    padding-right: 29px;
+  }
 }
 
 @media screen and (max-width: $desktopWidth) {
+
   .header{
   .menu{
     & .header__menu{
@@ -16,7 +19,9 @@
   .arrow_left {
     display: none;
   }
-
+  .main{
+    //padding-top: 32%;
+  }
   .main__instruction {
     section {
       width: 69%;
@@ -27,11 +32,11 @@
     }
   }
   .main__instruction_list {
-    padding-right: 2%;
+    padding-right: 4%;
     margin-left: 4%;
-    li {
-      margin-bottom: 4%;
-      padding: 0;
+    li.item {
+      margin-bottom: 6%;
+      padding-right: 0;
       justify-content: flex-start;
       .icons,
       img.main__cursor {
@@ -43,6 +48,7 @@
         p {
           text-align: start;
           margin-bottom: 0;
+          padding-bottom: 0;
         }
         aside {
           text-align: start;
@@ -102,6 +108,12 @@
 @media screen and (max-width: $smDesktopWidth) {
 
   .header{
+    .header_btn{
+      line-height: 1.5rem;
+      &.header__call, &.header__help{
+        padding: 0 0.5%;
+      }
+    }
    & a:nth-child(2) {
      max-width: 20%;
      .header__logo2{
@@ -141,7 +153,7 @@
   }
   .main .main__find_guardian {
     h1 {
-      font-size: rem(60px);
+      font-size: rem(50px);
       line-height: rem(30px);
     }
     & > p {
@@ -222,7 +234,8 @@
   .header .menu{
     & .header__menu{
       //width: 68%;
-      background-color: rgba(0 ,0 , 0 , 0.8);
+      //background-color: rgba(0 ,0 , 0 , 0.8);
+      right: 18%;
     }
   }
 
@@ -277,7 +290,8 @@
   .main {
     margin-top: 3%;
     .main__find_guardian {
-      margin-top: 24%;
+      padding-top: 4%;
+      //margin-top: 7%;
       h1 {
         font-size: rem(35px);
         line-height: rem(15px);
@@ -315,8 +329,14 @@
       width: 98%;
       margin: 5% 0;
       padding-left: 5%;
-      & > li {
+      & > li.item {
         margin: 0;
+        article{
+          padding-bottom: 5%;
+          p{
+          padding-bottom: 0;
+          }
+        }
       }
     }
     section {
@@ -368,6 +388,9 @@
 
   .footer__follow {
     width: 50%;
+     }
+     .main__comment .all_comments article figure{
+       margin-top: 4%;
      }
 }
 
