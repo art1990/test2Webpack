@@ -26,6 +26,7 @@
     font-weight: 700;
     border: 2px solid $mainFont;
     border-radius: 6px;
+    white-space: nowrap;
     &:hover {
 
       background-color: rgba(221, 221, 221, 0.2);
@@ -40,15 +41,16 @@
     }
   }
   .header__log_in{
-    padding-right: 3%;
+    //padding-right: 3%;
+    margin-right: 3%; 
   }
   .header__log_in,
   .header__sign_up {
     line-height: rem(38px);
     text-align: right;
-    padding-left: 3%;
+    //padding-left: 3%;
+    margin-left: 3%; 
     &:hover {
-
       color: rgb(221, 221, 221);
       transition: all 0.5s;
     }
@@ -60,40 +62,44 @@
       padding-right: 0.45em;
       display: flex;
       align-items: center;
-      //transition: right 1.5s step-start, background-color 1.5s step-end, color 1.5s step-end;
+      &:hover {
+        color: rgb(221, 221, 221);
+        transition: all 0.5s;
+      }
 
     }
     &:hover .header__menu{
-      right: 0;
-      margin-top: -1px;
-      margin-right: 2%;
-      transition: right 0.1s step-end;
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.3s;
+      border-radius: 3%;
     }
-    &:hover > * {
-      background-color: #a7a7a7;
-      transition: all 0.3s;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    }
+
     .header__menu {
+      margin-top: 1.4%;
+      margin-right: 2%;
+      right: 0;
       z-index: 5;
+      overflow: hidden;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      right: 5000px;
+      visibility: hidden;
+      opacity: 0.2;
       position: absolute;
       line-height: 38px;
       background: #a7a7a7;
-      //transition: all 1.5s step-end;
+      transition: all 0.3s ease-in;
       li{
         a{
           max-width: 100%;
+          display: block;
+          padding: 0 0.45em;
         }
         white-space: nowrap;
-
-        padding: 0 0.45em;
         box-sizing: border-box;
 
         text-align: center;
         &:hover{
-          background-color: #939393
+          background-color: #939393;
         }
       }
 
@@ -110,11 +116,11 @@
   padding-bottom: 0.7%;
   padding-top: 0.7%;
   background: white;
-  & > a, nav > a, div{
+  & > a, nav > a, div.menu_div{
     color: #0b2a37;
   };
   & .header__log_in:hover,
-  & .header__sign_up:hover{
+  & .header__sign_up:hover, div.menu_div:hover{
     color: #0b2a37b0;
   }
 
@@ -136,9 +142,17 @@
 
   }
 
-  .menu:hover .menu_div{
-    color: white;
-  }
+}
 
+.header.header__white div.menu_div:hover{
+  color: #0b2a37b0;
+}
 
+.menu-hidden{
+  visibility: hidden !important;
+}
+
+.menu-visible{
+  visibility: visible !important;
+  opacity: 1 !important;
 }

@@ -270,15 +270,27 @@
   }
 }
 @media screen and (max-width: $tableWidth) {
+  .main__btn_find{
+    font-size: rem(15px);
+    line-height: rem(25px);
+    padding: 0.8% 1%;
+  }
+  .main__input_find{
+    font-size: rem(15px);
+    line-height: rem(25px);
+    padding: 1% 5%
+  }
   .header .menu .fa-bars{
     //margin: 0 0.25em;
   }
   header.header{
     .header__log_in{
-      padding-right: 2.5%;
+      //padding-right: 2.5%;
+      margin-right: 2.5%;
     }
   .header__log_in, .header .header__sign_up{
-    padding-left: 2.5%;
+    //padding-left: 2.5%;
+    margin-left: 2.5%;
   }}
   .header .menu{
     & .header__menu{
@@ -465,9 +477,7 @@
   body{
     background-repeat: repeat;
   }
-  .main__input_find {
-    padding: 0;
-  }
+
   .main__btn_find {
     font-size: 80%;
   }
