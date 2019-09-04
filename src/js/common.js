@@ -6,14 +6,65 @@ const headerMenu = document.querySelector(".header__menu");
 const btnCall = document.querySelector(".header__call");
 const headerMenuItem = header.querySelectorAll("li")
 
-mainFind.addEventListener("mouseover", ({ target }) => {
+computedStyle = function(vElement) {
+  return window.getComputedStyle
+         ?window.getComputedStyle(vElement,null)
+         :vElement.currentStyle; 
+}
+
+isVisible = function(vElement) {
+  return !(vElement.offsetWidth == 0 && vElement.offsetHeight == 0)
+         && computedStyle(vElement).visibility != "hidden";  
+}
+
+
+const removeHidden = ({ target }) => {
   inputFind.classList.remove("hidden");
-});
+}
 
-mainFind.addEventListener("mouseout", () => {
+const addHidden =  () => {
   inputFind.classList.add("hidden");
-});
+}
 
+const addVisible = ({target}) => {
+    if(!target.classList.contains("header")) {return}
+    if (isVisible(headerMenu)) {
+      headerMenu.classList.add("menu-visible")
+      ;
+  }
+}
+
+const removeVisible = () => {
+  if (isVisible(headerMenu)) {
+    headerMenu.classList.remove("menu-visible")
+    ;
+  }
+}
+
+const onScroll = () => {
+  if (window.pageYOffset > 1) {
+    header.classList.add("header__white");
+    btnCall.textContent = "Call +48 567 365 485";
+  } else {
+    header.classList.remove("header__white");
+    btnCall.textContent = "CALL US";
+  }
+}
+
+const addMenuHidden = () => {
+  headerMenu.classList.add("menu-hidden")
+  setTimeout(() => {
+    headerMenu.classList.remove("menu-hidden")
+  }, 200)
+}
+
+window.addEventListener("scroll", onScroll)
+header.addEventListener("mouseout", removeVisible) 
+mainFind.addEventListener("mouseover", removeHidden);
+mainFind.addEventListener("mouseout", addHidden);
+header.addEventListener("mouseover", addVisible);
+headerMenuItem.forEach(elem => elem.addEventListener("click", addMenuHidden));
+ 
 const allComment = document.querySelector(".all_comments");
 const user1 = allComment.querySelector(".article_user1");
 const user2 = allComment.querySelector(".article_user2");
@@ -34,45 +85,4 @@ window.setInterval(() => {
   count++;
 }, 60000);
 
-window.onscroll = () => {
-  if (window.pageYOffset > 1) {
-    header.classList.add("header__white");
-    btnCall.textContent = "Call +48 567 365 485";
-  } else {
-    header.classList.remove("header__white");
-    btnCall.textContent = "CALL US";
-  }
-};
-
-headerMenuItem.forEach(a => a.onclick = () => {
-  headerMenu.classList.add("menu-hidden")
-  setTimeout(() => {
-    headerMenu.classList.remove("menu-hidden")
-  }, 200)
-})
-
-computedStyle = function(vElement) {
-  return window.getComputedStyle
-         ?window.getComputedStyle(vElement,null)
-         :vElement.currentStyle; 
-}
-
-isVisible = function(vElement) {
-  return !(vElement.offsetWidth == 0 && vElement.offsetHeight == 0)
-         && computedStyle(vElement).visibility != "hidden";  
-}
-
-header.onmouseover = ({target}) => {
-  if(!target.classList.contains("header")) {return}
-  if (isVisible(headerMenu)) {
-    headerMenu.classList.add("menu-visible")
-    ;
-  }
-}
-
-header.onmouseout = () => {
-  if (isVisible(headerMenu)) {
-    headerMenu.classList.remove("menu-visible")
-    ;
-  }
-}})()
+})()
