@@ -70,11 +70,7 @@ const user1 = allComment.querySelector(".article_user1");
 const user2 = allComment.querySelector(".article_user2");
 for (let i = 0; i < 4; i++) {
   let copyComment;
-  if (i === 2) {
-    copyComment = user2.cloneNode(true);
-  } else {
-    copyComment = user1.cloneNode(true);
-  }
+  copyComment = i === 2? user2.cloneNode(true): user1.cloneNode(true);
   allComment.appendChild(copyComment);
 }
 
