@@ -1,4 +1,4 @@
-const btnFind = document.querySelector(".main__btn_find");
+(() => {const btnFind = document.querySelector(".main__btn_find");
 const inputFind = document.querySelector(".main__input_find");
 const mainFind = document.querySelector(".main__form_find");
 const header = document.querySelector(".header");
@@ -75,4 +75,4 @@ header.onmouseout = () => {
     headerMenu.classList.remove("menu-visible")
     ;
   }
-}
+}})()
