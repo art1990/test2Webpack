@@ -29,7 +29,7 @@
   };
 
   const addVisible = ({ target }) => {
-    if (!target.classList.contains("header")) {
+    if (!target.classList.contains("header") || headerMenu.classList.contains("menu-hidden")) {
       return;
     }
     if (isVisible(headerMenu)) {
