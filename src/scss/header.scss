@@ -68,7 +68,7 @@
       }
 
     }
-    &:hover .header__menu{
+    &:hover .header__menu:not(.menu-hidden){
       visibility: visible;
       opacity: 1;
       transition: opacity 0.3s;
@@ -146,10 +146,6 @@
 
 .header.header__white div.menu_div:hover{
   color: #0b2a37b0;
-}
-
-.menu-hidden{
-  visibility: hidden !important;
 }
 
 .menu-visible{
