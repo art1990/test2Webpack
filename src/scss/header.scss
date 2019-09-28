@@ -88,6 +88,9 @@
       line-height: 38px;
       background: #a7a7a7;
       transition: all 0.3s ease-in;
+      &.menu-hidden{
+        transition: all 0s;
+      }
       li{
         a{
           max-width: 100%;
